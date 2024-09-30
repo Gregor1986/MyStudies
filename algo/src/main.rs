@@ -4,6 +4,7 @@ fn main() {
     position_in_vec(vec_a, item);
     
 }
+// Создание вектора
 fn create_vec(len_vec: i32) -> Vec<i32> {
     let mut a = vec![];
     let mut i = 1;
@@ -13,6 +14,7 @@ fn create_vec(len_vec: i32) -> Vec<i32> {
     }
     a
 }
+// Функция бинарного поиска
 fn position_in_vec(vec: Vec<i32>, item: i32) {
     let mut low = 0;
     let mut high = vec.len() - 1;
