@@ -11,7 +11,6 @@ fn countdown(a: i32) {
     } else {
         countdown(a - 1);
     }
-    
 }
 fn fact(b: i32) -> i32 {
     if b == 1 {
