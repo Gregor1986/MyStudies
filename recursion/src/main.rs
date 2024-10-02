@@ -40,7 +40,7 @@ fn sum_recursion(array: [i32; 6]) -> i32 {
 fn count_element(array: [i32; 6]) -> i32 {
     let mut count = 0;
     // let mut key = 0;
-    for i in 0..array.len() {
+    for i in array {
         if count > i {
             count as i32;
         } else {
