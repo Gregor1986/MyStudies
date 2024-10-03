@@ -9,7 +9,6 @@ fn main() {
     thread_rng().fill(&mut arr[..]);
     println!("array: {:?}", arr);
     println!("vector: {:?}", generate_vector(10));
-
 }
 fn generate_vector(lenght_vec: usize) -> Vec<i32> {
     let mut vector: Vec<i32> = vec![];
@@ -21,4 +20,12 @@ fn generate_vector(lenght_vec: usize) -> Vec<i32> {
         i += 1;
     }
     vector
+}
+fn fast_sort (array: Vec<i32>) {
+    if array.len() < 2 {
+        println!("{:?}", array);
+    } else {
+        let pivot = array[0];
+        
+    }
 }
