@@ -1,6 +1,6 @@
 use rand::{Rng, thread_rng};
 fn main() {
-    let mut rng = thread_rng();
+    // let mut rng = thread_rng();
     // let x: u32 = rng.gen();
     // println!("{}", x);
     // let n: u32 = rng.gen_range(0..100);
@@ -8,16 +8,17 @@ fn main() {
     // let mut arr = [0u8; 20];
     // thread_rng().fill(&mut arr[..]);
     // println!("{:?}", arr);
-    // println!("{:?}", generate_vector(10));
+    println!("{:?}", generate_vector(10));
+
+}
+fn generate_vector(lenght_vec: usize) -> Vec<i32> {
     let mut vector: Vec<i32> = vec![];
-    // let number: i32 = rng.gen_range(0..100);
-    println!("{}", vector.len());
-    let mut i = 0;
-    while i != 10 {
-        let number: i32 = rng.gen_range(0..100);
+    let mut i: usize = 0;
+    let mut rng = thread_rng();
+    while i != lenght_vec {
+        let number = rng.gen_range(0..100);
         vector.insert(i, number);
         i += 1;
     }
-    // // vector.push(number);
-    println!("{:?} lenght {}", vector, vector.len());
+    vector
 }
